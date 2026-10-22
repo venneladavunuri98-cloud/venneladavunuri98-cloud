@@ -6,35 +6,40 @@ Most of my work happens where an LLM meets a business process: classifying and r
 
 I'm open to AI automation roles and freelance projects.
 
+## Featured projects
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**RFP Intelligence Platform**](https://github.com/venneladavunuri98-cloud/RFP-Intelligence-Platform) | Turns a tender PDF into a scored go/no-go draft. Every scored fact points to a page and an exact quote that Python verifies, and a person makes the final call. 83–93% requirement recall on 3 public Indian government RFPs, with 165 tests. | LangGraph · Gemini · pgvector · FastAPI · Streamlit · n8n |
+| [**AI Outbound Sales Caller**](https://github.com/venneladavunuri98-cloud/ai-outbound-sales-caller) | A lead row becomes a researched, grounded phone pitch. The do-not-call list, calling hours and retries are enforced in code, and a meeting is booked only when the transcript quotes the agreed time and email. | n8n · OpenAI · OmniDimension · Google Workspace |
+| [**AI Lead Finder**](https://github.com/venneladavunuri98-cloud/ai-lead-finder) | One form in, a ranked list of sales-ready leads out. It searches Apollo, skips dead sites, detects buying signals, finds the decision maker, has an LLM analyse each company and computes a 0–100 score in code. | n8n · Apollo API · OpenAI · Google Sheets |
+| [**Restaurant Voice Ordering Agent**](https://github.com/venneladavunuri98-cloud/restaurant-voice-ordering-agent) | A phone agent that answers only from live menu data, captures allergy notes word for word, logs every tool call, and hands each confirmed order to staff. | n8n · PostgreSQL · voice AI |
+| [**Prior Authorization Approval**](https://github.com/venneladavunuri98-cloud/prior-authorization-approval) | A physician's one-click approval becomes a payer submission. Links are single-use, patient data is decrypted only at submission, eligibility is checked first, and denials get an AI-drafted appeal. | n8n · Supabase · Availity · OpenAI |
+| [**GuardedReview**](https://github.com/venneladavunuri98-cloud/guardedreview) | AI code review for regulated codebases: secrets and personal data are redacted before the LLM call, a person approves each review in Slack, and decisions go to an insert-only audit log. | n8n · LLM · Slack · PostgreSQL |
+
+More workflows, including a RAG support chatbot, a hospital voice appointment assistant and insurance quote and renewal automations, are in [**n8n-ai-workflows**](https://github.com/venneladavunuri98-cloud/n8n-ai-workflows).
+
 ## What I build
 
 - AI agents and LLM workflows that classify, route and call tools, with iteration caps and human approval where the stakes are high
-- Voice AI agents on Vapi for bookings and support, including multilingual restaurant and healthcare appointment flows
+- Voice AI agents (Vapi, OmniDimension) for ordering, bookings, support and outbound sales calls
 - RAG chatbots that answer from source content and cite it
 - Integrations with REST APIs, webhooks, Gmail, Google Sheets, Supabase, and lead and CRM tools such as Apollo and Meta Lead Ads
-- Insurance claims intake (FNOL) and healthcare appointment scheduling workflows
-
-## Featured project
-
-### [GuardedReview](https://github.com/venneladavunuri98-cloud/guardedreview): human-in-the-loop AI code review in n8n
-
-AI code review for regulated codebases. The workflow redacts secrets and personal data before the LLM call and checks the model's output in code. A person approves each review in Slack before it is posted, and every decision goes into an insert-only Postgres audit log.
-
-`n8n` · `LLM` · `Slack` · `PostgreSQL` · `AI governance`
-
-Next on my list to publish: an RFP evaluator with citation-checked scoring (LangGraph), voice AI booking agents, and an insurance FNOL intake workflow.
+- Healthcare and insurance workflows: appointment scheduling, prior authorization, quotes, renewals and claims intake
 
 ## Tech stack
 
-Automation and AI: n8n · Vapi · OpenAI and other LLM APIs · LangGraph · RAG · prompt engineering
+Automation and AI: n8n · Vapi · OpenAI, Gemini and other LLM APIs · LangGraph · RAG · prompt engineering
 
-Data and integrations: REST APIs · webhooks · Supabase · PostgreSQL · Google Sheets · Gmail · Apollo · Meta Lead Ads
+Data and integrations: REST APIs · webhooks · Supabase · PostgreSQL · pgvector · Google Sheets · Gmail · Apollo · Meta Lead Ads
 
-Languages: Python · JavaScript · SQL
+Languages and frameworks: Python · FastAPI · JavaScript · SQL
 
 ## How I build
 
 Anything consequential passes a code check or a person before it takes effect. When a model returns bad output, the workflow raises an alert and stops there. Every decision is logged, so I can explain later what happened and why.
+
+Every public workflow here is sanitized before it's pushed: no API keys, credential IDs or real customer data.
 
 ## Contact
 
