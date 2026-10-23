@@ -1,5 +1,7 @@
 # Hi, I'm Vennela 👋
 
+![Profile Views](https://komarev.com)
+
 I'm an AI automation engineer at Synergistic AI Solutions in Hyderabad, India. I build AI agents and workflow automations that connect to real business systems, make structured decisions, and hand off to a person when a decision needs one.
 
 Most of my work happens where an LLM meets a business process: classifying and routing requests, answering from a knowledge base, calling APIs, booking appointments by voice and qualifying leads. Around the model I add validation, human approval steps, logging and failure paths, which is what makes a workflow safe to run in a real business.
