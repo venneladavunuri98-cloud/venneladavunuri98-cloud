@@ -1,6 +1,5 @@
 # Hi, I'm Vennela 👋
 
-![Profile Views](https://komarev.com)
 
 I'm an AI automation engineer at Synergistic AI Solutions in Hyderabad, India. I build AI agents and workflow automations that connect to real business systems, make structured decisions, and hand off to a person when a decision needs one.
 
